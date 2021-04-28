@@ -1,0 +1,48 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.projekat.TitleFragment">
+
+    <LinearLayout
+        android:id="@+id/naslovna_1_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryLightColor"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcome_text_id"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_margin="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:text="@string/welcome"
+            android:textColor="@color/primaryTextColor"
+            android:textColorLink="@color/primaryTextColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/startId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100sp"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="200sp"
+            android:layout_marginEnd="100sp"
+            android:layout_marginRight="100sp"
+            android:layout_marginBottom="100sp"
+            android:background="@color/secondaryLightColor"
+            android:text="@string/start"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/primaryDarkColor"
+            app:rippleColor="@color/primaryLightColor" />
+
+    </LinearLayout>
+</layout>

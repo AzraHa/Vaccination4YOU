@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Vakcinacija</string>
+    <string name="welcome">Dobrodošli</string>
+    <string name="start">Započni</string>
+    <string name="about">O aplikaciji</string>
+    <string name="info">Informacije COVID-19</string>
+</resources>
