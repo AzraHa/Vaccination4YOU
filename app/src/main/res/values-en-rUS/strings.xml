@@ -5,4 +5,8 @@
     <string name="start">Start</string>
     <string name="about">About</string>
     <string name="info">Info COVID-19</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="birth_date">Date of birth</string>
+    <string name="unos_podataka">Please enter your data</string>
 </resources>

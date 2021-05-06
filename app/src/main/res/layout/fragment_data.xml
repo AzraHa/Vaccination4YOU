@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:context=".SecondFragment">
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DataFragment">
 
     <LinearLayout
-        android:layout_width="407dp"
-        android:layout_height="653dp"
+        android:id="@+id/data_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="50dp"
-            android:layout_marginBottom="50dp"
-            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_next_id"
-            app:layout_constraintVertical_bias="0">
+            app:layout_constraintVertical_bias="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/podaci_text_id"
@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:text="@string/unos_podataka"
+                android:text="@string/kategorije"
                 android:textColor="@color/primaryTextColor"
                 android:textColorLink="@color/primaryTextColor"
                 android:textSize="20sp"
@@ -41,44 +41,45 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginBottom="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
             android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/first_name_id"
+            <CheckBox
+                android:id="@+id/trudnoca_checkbox_id"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:ems="10"
-                android:hint="@string/first_name"
-                android:importantForAutofill="no"
-                android:inputType="textPersonName" />
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="@string/trudnoca" />
 
-            <EditText
-                android:id="@+id/last_name_id"
+            <CheckBox
+                android:id="@+id/dijabeticar_checkbox_id"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:ems="10"
-                android:hint="@string/last_name"
-                android:importantForAutofill="no"
-                android:inputType="textPersonName" />
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="@string/respiratorne_smetnje" />
 
-            <EditText
-                android:id="@+id/birth_date_id"
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="@string/dijabeticar" />
+
+            <CheckBox
+                android:id="@+id/hemodijaliza_checkbox_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:ems="10"
-                android:hint="@string/birth_date"
-                android:importantForAutofill="no"
-                android:inputType="date" />
+                android:layout_margin="5dp"
+                android:text="@string/hemodijaliza" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/onkoloski" />
+
         </LinearLayout>
 
         <Button
@@ -87,7 +88,7 @@
             android:layout_height="60dp"
             android:layout_marginStart="100sp"
             android:layout_marginLeft="100sp"
-            android:layout_marginTop="100sp"
+            android:layout_marginTop="50sp"
             android:layout_marginEnd="100sp"
             android:layout_marginRight="100sp"
             android:layout_marginBottom="100sp"
@@ -99,6 +100,5 @@
             app:backgroundTint="@color/primaryDarkColor"
             app:rippleColor="@color/primaryLightColor" />
     </LinearLayout>
-
 
 </FrameLayout>

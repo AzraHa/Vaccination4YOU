@@ -4,4 +4,17 @@
     <string name="start">Započni</string>
     <string name="about">O aplikaciji</string>
     <string name="info">Informacije COVID-19</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_name">Ime</string>
+    <string name="last_name">Prezime</string>
+    <string name="birth_date">Datum rođenja</string>
+    <string name="unos_podataka">Molimo unesite Vaše podatke</string>
+    <string name="dalje">Dalje</string>
+    <string name="kategorije">"Ukoliko spadate u sljedeće kategorije molimo Vas da označite polja "</string>
+    <string name="trudnoca">Trudna sam</string>
+    <string name="respiratorne_smetnje">Spadam u kategoriju pacijenata sa respiratornim smetnjama</string>
+    <string name="dijabeticar">Dijabeticar sam</string>
+    <string name="hemodijaliza">Idem na hemodijalizu</string>
+    <string name="onkoloski">Onkoloski sam pacijent</string>
 </resources>
