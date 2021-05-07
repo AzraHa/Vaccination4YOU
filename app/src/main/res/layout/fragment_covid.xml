@@ -5,15 +5,13 @@
     tools:context="com.example.projekat.CovidFragment">
 
     <LinearLayout
-        android:layout_width="407dp"
-        android:layout_height="653dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="50dp"
-            android:layout_marginBottom="50dp"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -68,28 +66,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/Sputnik" />
+
+                <Button
+                    android:id="@+id/covid_f_button_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100sp"
+                    android:layout_marginLeft="100sp"
+                    android:layout_marginTop="200sp"
+                    android:layout_marginEnd="100sp"
+                    android:layout_marginRight="100sp"
+                    android:layout_marginBottom="100sp"
+                    android:background="@color/secondaryLightColor"
+                    android:text="@string/dalje"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/primaryDarkColor"
+                    app:rippleColor="@color/primaryLightColor" />
+
             </LinearLayout>
 
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/second_f_button_id"
-            android:layout_width="191dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="100sp"
-            android:layout_marginLeft="100sp"
-            android:layout_marginTop="100sp"
-            android:layout_marginEnd="100sp"
-            android:layout_marginRight="100sp"
-            android:layout_marginBottom="100sp"
-            android:background="@color/secondaryLightColor"
-            android:text="@string/dalje"
-            android:textColor="@color/primaryTextColor"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:backgroundTint="@color/primaryDarkColor"
-            app:rippleColor="@color/primaryLightColor" />
     </LinearLayout>
 
 

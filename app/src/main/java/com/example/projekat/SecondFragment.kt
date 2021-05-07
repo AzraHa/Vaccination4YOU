@@ -18,7 +18,7 @@ class SecondFragment : Fragment() {
             inflater, R.layout.fragment_second, container, false)
 
         binding.secondFButtonId.setOnClickListener{view : View ->
-            view.findNavController().navigate(R.id.action_secondFragment_to_dataFragment)}
+            view.findNavController().navigate(R.id.action_secondFragment_to_vaccineFragment)}
 
         return binding.root
 

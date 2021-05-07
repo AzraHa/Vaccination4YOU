@@ -12,7 +12,8 @@
         tools:layout="@layout/fragment_title" >
         <action
             android:id="@+id/action_titleFragment_to_secondFragment"
-            app:destination="@id/secondFragment" />
+            app:destination="@id/secondFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
@@ -20,14 +21,18 @@
         android:label="@string/app_name"
         tools:layout="@layout/fragment_second" >
         <action
-            android:id="@+id/action_secondFragment_to_dataFragment"
-            app:destination="@id/dataFragment" />
+            android:id="@+id/action_secondFragment_to_vaccineFragment"
+            app:destination="@id/vaccineFragment" />
     </fragment>
     <fragment
         android:id="@+id/dataFragment"
         android:name="com.example.projekat.DataFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_data" />
+        tools:layout="@layout/fragment_data" >
+        <action
+            android:id="@+id/action_dataFragment_to_covidFragment"
+            app:destination="@id/covidFragment" />
+    </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.projekat.AboutFragment"
@@ -38,5 +43,31 @@
         android:name="com.example.projekat.InfoFragment"
         android:label="@string/info"
         tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/vaccineFragment"
+        android:name="com.example.projekat.VaccineFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_vaccine" >
+        <action
+            android:id="@+id/action_vaccineFragment_to_dataFragment"
+            app:destination="@id/dataFragment" />
+        <action
+            android:id="@+id/action_vaccineFragment_to_endFragment"
+            app:destination="@id/endFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/covidFragment"
+        android:name="com.example.projekat.CovidFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_covid" >
+        <action
+            android:id="@+id/action_covidFragment_to_endFragment"
+            app:destination="@id/endFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/endFragment"
+        android:name="com.example.projekat.EndFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_end" />
 
 </navigation>

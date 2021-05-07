@@ -24,8 +24,8 @@
 
     <TextView
         android:id="@+id/about_t_id"
-        android:layout_width="281dp"
-        android:layout_height="448dp"
+        android:layout_width="348dp"
+        android:layout_height="520dp"
         android:layout_marginTop="32dp"
         android:lineSpacingExtra="10sp"
         android:text="@string/about_text"

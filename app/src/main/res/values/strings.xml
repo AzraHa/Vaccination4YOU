@@ -15,7 +15,7 @@
     <string name="dijabeticar">Dijabeticar sam</string>
     <string name="hemodijaliza">Idem na hemodijalizu</string>
     <string name="onkoloski">Onkoloski sam pacijent</string>
-    <string name="about_text">Ovo je prva verzija aplikacije.\nNapravili su je studenti \nRiad Pap i \nAzra Hadžihajdarević \nkao projekat iz predmeta Razvoj mobilnih aplikacija .\n\n Aplikacija je rađena u programskom jeziku Kotlin.</string>
+    <string name="about_text">Ovo je prva verzija aplikacije.\nNapravili su je studenti Riad Pap i Azra Hadžihajdarević kao projekat iz predmeta Razvoj mobilnih aplikacija .\n\n Aplikacija je rađena u programskom jeziku <b>Kotlin</b>.</string>
     <string name="izbor_vakcine">Izaberite vakcinu</string>
     <string name="Pfizer_BioNTech">Pfizer-BioNTech</string>
     <string name="Moderna">Moderna</string>
@@ -26,4 +26,6 @@
     <string name="da">Da</string>
     <string name="covid_ne">Ne</string>
     <string name="ne">Ne</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,28 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".DataFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.projekat.DataFragment">
 
     <LinearLayout
         android:id="@+id/data_layout_id"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_next_id"
-            app:layout_constraintVertical_bias="0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="50dp"
             android:layout_marginBottom="50dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_next_id"
+            app:layout_constraintVertical_bias="0">
 
             <TextView
                 android:id="@+id/podaci_text_id"
@@ -41,64 +38,65 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="50dp"
-            android:orientation="vertical">
-
-            <CheckBox
-                android:id="@+id/trudnoca_checkbox_id"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:text="@string/trudnoca" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <CheckBox
                 android:id="@+id/dijabeticar_checkbox_id"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/respiratorne_smetnje" />
 
             <CheckBox
                 android:id="@+id/checkBox"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="@string/dijabeticar" />
 
             <CheckBox
                 android:id="@+id/hemodijaliza_checkbox_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:gravity="center"
                 android:text="@string/hemodijaliza" />
 
             <CheckBox
                 android:id="@+id/checkBox3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:gravity="center"
                 android:text="@string/onkoloski" />
+
+            <CheckBox
+                android:id="@+id/trudnoca_checkbox_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/trudnoca" />
+
+            <Button
+                android:id="@+id/data_f_button_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="50sp"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="50sp"
+                android:layout_marginEnd="50sp"
+                android:layout_marginRight="50sp"
+                android:layout_marginBottom="100sp"
+                android:background="@color/secondaryLightColor"
+                android:text="@string/dalje"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/primaryDarkColor"
+                app:rippleColor="@color/primaryLightColor" />
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/second_f_button_id"
-            android:layout_width="191dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="100sp"
-            android:layout_marginLeft="100sp"
-            android:layout_marginTop="30sp"
-            android:layout_marginEnd="100sp"
-            android:layout_marginRight="100sp"
-            android:layout_marginBottom="100sp"
-            android:background="@color/secondaryLightColor"
-            android:text="@string/dalje"
-            android:textColor="@color/primaryTextColor"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:backgroundTint="@color/primaryDarkColor"
-            app:rippleColor="@color/primaryLightColor" />
     </LinearLayout>
 
-</FrameLayout>
+</layout>
