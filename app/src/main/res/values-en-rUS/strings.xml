@@ -9,4 +9,17 @@
     <string name="last_name">Last name</string>
     <string name="birth_date">Date of birth</string>
     <string name="unos_podataka">Please enter your data</string>
+    <string name="dalje">Next</string>
+    <string name="kategorije">If you fall into the following categories please check the boxes</string>
+    <string name="trudnoca">I am pregnant</string>
+    <string name="respiratorne_smetnje">I belong to the category of patients with respiratory disorders</string>
+    <string name="dijabeticar">I am diabetic</string>
+    <string name="hemodijaliza">" I'm going on hemodialysis"</string>
+    <string name="onkoloski">" I am an oncology patient"</string>
+    <string name="izbor_vakcine">Chose vaccine</string>
+    <string name="Pfizer_BioNTech">Pfizer-BioNTech</string>
+    <string name="Moderna">Moderna</string>
+    <string name="Sinopharm">Sinopharm</string>
+    <string name="Sputnik">Sputnik V</string>
+    <string name="Johnson"><![CDATA[Johnson & Johnson’s]]></string>
 </resources>
