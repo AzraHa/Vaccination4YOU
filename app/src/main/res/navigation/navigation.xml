@@ -24,6 +24,11 @@
             app:destination="@id/dataFragment" />
     </fragment>
     <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.example.projekat.DataFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_data" />
+    <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.projekat.AboutFragment"
         android:label="@string/about"
@@ -33,9 +38,5 @@
         android:name="com.example.projekat.InfoFragment"
         android:label="@string/info"
         tools:layout="@layout/fragment_info" />
-    <fragment
-        android:id="@+id/dataFragment"
-        android:name="com.example.projekat.DataFragment"
-        android:label="fragment_data"
-        tools:layout="@layout/fragment_data" />
+
 </navigation>
