@@ -31,21 +31,35 @@ tools:context="com.example.projekat.VaccineFragment">
 
             android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/covid_da_id"
-                style="@android:style/Widget.CompoundButton.CheckBox"
-                android:layout_width="wrap_content"
+            <RadioGroup
+                android:id="@+id/covid_q_radio_id"
+                android:layout_width="242dp"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="@string/da" />
+                android:layout_marginTop="10dp"
+                android:animateLayoutChanges="false"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionText"
+                tools:ignore="Suspicious0dp">
 
-            <CheckBox
-                android:id="@+id/covid_ne_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
+                <RadioButton
+                    android:id="@+id/covid_da_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/da"
+                    android:textSize="20sp"
+                    tools:text="Da" />
 
-                android:text="@string/ne" />
+                <RadioButton
+                    android:id="@+id/covid_ne_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ne"
+                    android:textSize="20sp"
+                    tools:text="Ne" />
+            </RadioGroup>
 
         </LinearLayout>
 
