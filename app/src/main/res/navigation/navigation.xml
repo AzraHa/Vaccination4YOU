@@ -22,9 +22,7 @@
         tools:layout="@layout/fragment_second" >
         <action
             android:id="@+id/action_secondFragment_to_vaccineFragment"
-            app:destination="@id/vaccineFragment"
-            app:popUpTo="@id/secondFragment"
-            app:popUpToInclusive="true" />
+            app:destination="@id/vaccineFragment"/>
     </fragment>
     <fragment
         android:id="@+id/dataFragment"
@@ -62,6 +60,16 @@
             app:destination="@id/endFragment"
             app:popUpTo="@id/secondFragment"
             app:popUpToInclusive="true" />
+        <argument
+            android:name="first_name"
+            app:argType="string" />
+        <argument
+            android:name="last_name"
+            app:argType="string" />
+        <argument
+            android:name="birth_date"
+            app:argType="string" />
+
     </fragment>
     <fragment
         android:id="@+id/covidFragment"
@@ -78,6 +86,8 @@
         android:id="@+id/endFragment"
         android:name="com.example.projekat.EndFragment"
         android:label="@string/app_name"
-        tools:layout="@layout/fragment_end" />
+        tools:layout="@layout/fragment_end" >
+
+    </fragment>
 
 </navigation>

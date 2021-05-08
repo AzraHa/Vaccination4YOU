@@ -16,6 +16,8 @@ class EndFragment : Fragment() {
     /*Na ovaj fragment mozemo doci sa vaccine fragmenta ili sa covid fragmenta
     * ovisno o tome ispisujemo podatke (termin vakcinacije,podatke i sl)
     * imamo mogucnost dijeljenja tih rezultata pomocu share opcije*/
+
+    //val args = VaccineFragmentArgs.fromBundle(requireArguments())
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         setHasOptionsMenu(true)
 
