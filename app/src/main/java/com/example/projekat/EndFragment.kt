@@ -23,7 +23,7 @@ class EndFragment : Fragment() {
             inflater, R.layout.fragment_end, container, false)
 
 
-        return inflater.inflate(R.layout.fragment_end, container, false)
+        return binding.root
     }
 
 

@@ -5,13 +5,16 @@
     tools:context="com.example.projekat.CovidFragment">
 
     <LinearLayout
+        android:id="@+id/f_covid_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:layout_marginBottom="50dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,62 +34,93 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
-                android:orientation="vertical">
 
-                <CheckBox
-                    android:id="@+id/checkBox8"
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioGroup
+                android:id="@+id/covid_q_radio_id"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:animateLayoutChanges="false"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/questionText"
+                tools:ignore="Suspicious0dp">
+
+                <RadioButton
+                    android:id="@+id/pfizer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/Pfizer_BioNTech" />
-
-                <CheckBox
-                    android:id="@+id/checkBox7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Moderna" />
-
-                <CheckBox
-                    android:id="@+id/checkBox9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Johnson" />
-
-                <CheckBox
-                    android:id="@+id/checkBox10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Sinopharm" />
-
-                <CheckBox
-                    android:id="@+id/checkBox11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Sputnik" />
-
-                <Button
-                    android:id="@+id/covid_f_button_id"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="100sp"
-                    android:layout_marginLeft="100sp"
-                    android:layout_marginTop="200sp"
-                    android:layout_marginEnd="100sp"
-                    android:layout_marginRight="100sp"
-                    android:layout_marginBottom="100sp"
-                    android:background="@color/secondaryLightColor"
-                    android:text="@string/dalje"
-                    android:textColor="@color/primaryTextColor"
+                    android:checked="true"
+                    android:text="@string/Pfizer_BioNTech"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    app:backgroundTint="@color/primaryDarkColor"
-                    app:rippleColor="@color/primaryLightColor" />
+                    tools:text="@string/Pfizer_BioNTech" />
 
-            </LinearLayout>
+                <RadioButton
+                    android:id="@+id/moderna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Moderna"
+                    android:textSize="20sp"
+                    tools:text="@string/Moderna" />
+                <RadioButton
+                    android:id="@+id/johnson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Johnson"
+                    android:textSize="20sp"
+                    tools:text="@string/Johnson" />
+                <RadioButton
+                    android:id="@+id/sinopharm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sinopharm"
+                    android:textSize="20sp"
+                    tools:text="@string/Sinopharm" />
+                <RadioButton
+                    android:id="@+id/sputnik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sputnik"
+                    android:textSize="20sp"
+                    tools:text="@string/Sputnik" />
 
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/AstraZeneca"
+                    tools:text="@string/AstraZeneca"/>
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/covid_f_button_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100sp"
+                android:layout_marginLeft="100sp"
+                android:layout_marginTop="50sp"
+                android:layout_marginEnd="100sp"
+                android:layout_marginRight="100sp"
+                android:layout_marginBottom="100sp"
+                android:background="@color/secondaryLightColor"
+                android:text="@string/dalje"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/primaryDarkColor"
+                app:rippleColor="@color/primaryLightColor" />
 
         </LinearLayout>
 

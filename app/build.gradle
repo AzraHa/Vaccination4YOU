@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
 }
-
+apply plugin: 'androidx.navigation.safeargs'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -52,5 +52,6 @@ dependencies {
     implementation 'android.arch.navigation:navigation-ui-ktx:1.0.0'
 
     implementation "com.google.android.material:material:$version"
+
 
 }

@@ -21,6 +21,6 @@ class CovidFragment : Fragment() {
         binding.covidFButtonId.setOnClickListener{view : View ->
             view.findNavController().navigate(R.id.action_covidFragment_to_endFragment)}
 
-        return inflater.inflate(R.layout.fragment_data, container, false)
+        return binding.root
     }
 }

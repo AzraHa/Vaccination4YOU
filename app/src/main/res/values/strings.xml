@@ -28,4 +28,25 @@
     <string name="ne">Ne</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="datum_vakcinacije">Datum vakcinacije</string>
+    <string name="vakcina">Vakcina</string>
+    <string name="AstraZeneca">AstraZeneca</string>
+    <string name="Covid_19">Koronavirusi su velika porodica virusa, koje nalazimo kod ljudi i životinja. Pod elektronskim mikroskopom ovi virusi imaju oblik krune, zbog čega su nazvani po latinskoj riječi corona, što znači \'kruna\'. Neki koronavirusi poznati su od 1960-ih godina kao uzročnici bolesti kod ljudi, od obične prehlade do težih upala dišnog sustava. No, od 2003. g. počeli su se pojavljivati novi koronavirusi, koji su sa životinja prešli na ljude te se počeli širiti s čovjeka na čovjeka. Dakle, nakon pojave SARS-a u Kini 2002. g. te MERS-a na Bliskom Istoku 2012. g. (koji se još uvijek pojavljuje), sada ponovno imamo novi koronavirus koji se pojavio u Kini.</string>
+    <string name="Covid_19_novo">Što je novi koronavirus?</string>
+    <string name="Sta_je_covid">Što je koronavirus?</string>
+    <string name="sta_text">Novi koronavirus is novi soj koronavirusa koji do sada nije bio otkriven kod ljudi. Svjetska zdravstvena organizacija ga je nazvala SARS-CoV-2 (SARS-coronavirus-2), a bolest koju uzrokuje COVID-19 (\"coronavirus disease\"). Otkriven je u Kini krajem 2019. godine.</string>
+    <string name="opasnost">Koliko je opasan novi koronavirus?</string>
+    <string name="opasnost_text">Prema dostupnim informacijama, infekcija novim koronavirusom najčešće uzorkuje simptome poput povišene temperature, suhog kašlja i umora, dok se rjeđe javljaju bolovi u tijelu, začepljen nos i grlobolja. U jedne  od pet oboljelih soba može doći do otežanog disanja i razvoja upale pluća, a u rjeđim slučajevima i do smrti. Čini se kako su starije osobe i osobe s kroničnim bolestima (npr. bolesti srca i dijabetes) podložnije težim oblicima bolest. Ipak, valja naglasiti kako i druge osobe mogu teže oboljeti od COVID-19 infekcije. Određeni broj zaraženih osopba ne pokazuju nikakve simptome bolesti (tzv. asimptomatski slučajevi).</string>
+    <string name="z_zivotinje">Može li se čovjek zaraziti novim koronavirusom sa životinja?</string>
+    <string name="z_zivotinje_text">SARS-CoV se prenio na ljude sa cibetke, životinje iz reda zvijeri srodnih mačkama, dok se MERS-CoV prenosi s jednogrbih deva na ljude. Postoje i još neki otkriveni koronavirusi koji cirkuliraju među životinjama, ali još nisu prešli na ljude.Životinjski izvor novog koronavirusa još nije otkriven, što ne znači da se čovjek može zaraziti od bilo koje životinje ili kućnog ljubimca. Vjerojatni izvor zaraze je neka životinja koja se prodavala na tržnici u Wuhanu. </string>
+    <string name="prenos">Može li se novi koronavirus prenijeti s osobe na osobu?</string>
+    <string name="prenos_text">Da, novi koronavirus uzrokuje respiratornu bolest i može se prenijeti s osobe na osobu, obično nakon bliskog kontakta sa zaraženim čovjekom, npr. u kućanstvu, na radnom mjestu ili u zdravstvenim ustanovama.</string>
+    <string name="sirenje">Kako se novi koronavirus širi?</string>
+    <string name="sirenje_text">Novi koronavirus je respiratorni virus koji se primarno širi u kontaktu s inficiranom osobom putem kapljica iz usta i nosa koje nastaju prilikom govora, kašljanja i kihanja i koje izravno padaju na sluznicu nosa, usta ili očiju druge osobe. Kapljice mogu pasti i na okolne površine, a preko njih se najčešće rukama virus prenese dalje. Zato je važno da svatko prakticira respiratornu higijenu te održava fizičku udaljenost od drugih osoba od najmanje 2 metra. U bliskom kontaktu preporuča se korištenje maski za lice koje prekrivaju usta i nos. Redovitim i pravilnim pranjem ruku smanjujemo mogućnost zaražavanja.</string>
+    <string name="povrsine">Koliko dugo novi koronavirus može preživjeti na površinama?</string>
+    <string name="povrsine_text">Još uvijek nije točno poznato koliko dugo novi koronavirus preživljava na površinama. Dosadašnje spoznaje nam govore kako virus može preživjeti na površinama svega nekoliko dana. Uobičajeni dezinficijensi uništavaju virus.</string>
+    <string name="inkubacija">Kolika je inkubacija za infekciju novim koronavirusom?</string>
+    <string name="inkubacija_text">Procjenjuje se kako inkubacija traje od 2 do 14 dana (prosječno 5-6 dana).</string>
+    <string name="lijecenje">Postoji li specifično liječenje bolesti uzrokovane novim koronavirusom?</string>
+    <string name="lijecenje_text">Ne postoji posebno liječenje za ovu bolest. Pristup liječenju pacijenata s infekcijama vezanim uz koronaviruse je liječenje kliničkih simptoma (npr. povišene temperature) i pružanje njege. Trenutno postoje cjepiva za suzbijanje sirenja zaraze infekcijom SARS-COVID-19.</string>
 </resources>

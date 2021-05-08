@@ -15,12 +15,14 @@ class DataFragment : Fragment() {
     * zatim prelazimo na covid fragment */
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
+
         val binding = DataBindingUtil.inflate<FragmentDataBinding>(
             inflater, R.layout.fragment_data, container, false)
 
         binding.dataFButtonId.setOnClickListener{view : View ->
             view.findNavController().navigate(R.id.action_dataFragment_to_covidFragment)}
-        return inflater.inflate(R.layout.fragment_data, container, false)
+
+        return binding.root
     }
 
 

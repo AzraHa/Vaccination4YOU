@@ -4,10 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.projekat.EndFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/fragment_end_l_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/end_ime_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/first_name" />
+
+            <TextView
+                android:id="@+id/end_datumr_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/birth_date" />
+
+            <TextView
+                android:id="@+id/end_prezime_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/last_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/datum_vakcinacije_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/datum_vakcinacije" />
+
+            <TextView
+                android:id="@+id/vakcina_end_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vakcina" />
+        </LinearLayout>
+
+    </LinearLayout>
 </layout>
