@@ -15,14 +15,14 @@
     <string name="dijabeticar">Dijabeticar sam</string>
     <string name="hemodijaliza">Idem na hemodijalizu</string>
     <string name="onkoloski">Onkoloski sam pacijent</string>
-    <string name="about_text">Ovo je prva verzija aplikacije.\nNapravili su je studenti Riad Pap i Azra Hadžihajdarević kao projekat iz predmeta Razvoj mobilnih aplikacija .\n\n Aplikacija je rađena u programskom jeziku <b>Kotlin</b>.</string>
+    <string name="about_text">Ovo je prva verzija aplikacije.\n Napravili su je studenti Riad Pap i Azra Hadžihajdarević kao projekat iz predmeta Razvoj mobilnih aplikacija.\n\n Aplikacija je rađena u programskom jeziku <b>Kotlin</b>.</string>
     <string name="izbor_vakcine">Izaberite vakcinu</string>
     <string name="Pfizer_BioNTech">Pfizer-BioNTech</string>
     <string name="Moderna">Moderna</string>
     <string name="Johnson"><![CDATA[Johnson & Johnson’s]]></string>
     <string name="Sinopharm">Sinopharm</string>
     <string name="Sputnik">Sputnik V</string>
-    <string name="Covid_q">"Da li trenutno bolujete od COVID-19 "</string>
+    <string name="Covid_q">"Da li trenutno bolujete od COVID-19 ?"</string>
     <string name="da">Da</string>
     <string name="covid_ne">Ne</string>
     <string name="ne">Ne</string>
@@ -46,7 +46,7 @@
     <string name="povrsine">Koliko dugo novi koronavirus može preživjeti na površinama?</string>
     <string name="povrsine_text">Još uvijek nije točno poznato koliko dugo novi koronavirus preživljava na površinama. Dosadašnje spoznaje nam govore kako virus može preživjeti na površinama svega nekoliko dana. Uobičajeni dezinficijensi uništavaju virus.</string>
     <string name="inkubacija">Kolika je inkubacija za infekciju novim koronavirusom?</string>
-    <string name="inkubacija_text">Procjenjuje se kako inkubacija traje od 2 do 14 dana (prosječno 5-6 dana).</string>
+    <string name="inkubacija_text">Procjenjuje se kako inkubacija traje od 2 do 14 dana (prosječno 5–6 dana).</string>
     <string name="lijecenje">Postoji li specifično liječenje bolesti uzrokovane novim koronavirusom?</string>
     <string name="lijecenje_text">Ne postoji posebno liječenje za ovu bolest. Pristup liječenju pacijenata s infekcijama vezanim uz koronaviruse je liječenje kliničkih simptoma (npr. povišene temperature) i pružanje njege. Trenutno postoje cjepiva za suzbijanje sirenja zaraze infekcijom SARS-COVID-19.</string>
 </resources>
