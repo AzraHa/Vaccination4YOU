@@ -16,10 +16,21 @@ class VaccineFragment : Fragment() {
     /*U zavisnosti od odgovora sa ovog fragmenta imamo dvije mogucnosti:
     * data fragment ili end fragment */
 
+    private var first_name : String = ""
+    private var last_name : String = ""
+    private var birth_date : String = ""
+    private var suffer_from : Boolean = false
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val binding = DataBindingUtil.inflate<FragmentVaccineBinding>(
             inflater, R.layout.fragment_vaccine, container, false)
+
+        val args = VaccineFragmentArgs.fromBundle(requireArguments())
+
+        first_name = args.firstName
+        last_name = args.lastName
+        birth_date = args.birthDate
 
         binding.covidNextBId.setOnClickListener{view : View ->
             val checkedId = binding.covidQRadioId.checkedRadioButtonId;
@@ -29,26 +40,20 @@ class VaccineFragment : Fragment() {
                 var odgovor = 0
 
                 when (checkedId) {
-
                     R.id.covid_da_id-> odgovor = 1
                     R.id.covid_ne_id -> odgovor = 2
-
                 }
-
-                if(odgovor == 1 ){
-
-                    view.findNavController().navigate(R.id.action_vaccineFragment_to_endFragment)
-
-                }else {
-
-                    view.findNavController().navigate(R.id.action_vaccineFragment_to_dataFragment)
-
+                if(odgovor == 1){
+                    suffer_from = true
                 }
+                view.findNavController().navigate(VaccineFragmentDirections.actionVaccineFragmentToDataFragment(first_name,last_name,birth_date,suffer_from))
             }
         }
-        val args = VaccineFragmentArgs.fromBundle(requireArguments())
 
-        Toast.makeText(context, args.firstName, Toast.LENGTH_LONG).show()
+
+        Toast.makeText(context, "NumCorrect: ${args.firstName}, NumQuestions: ${args.lastName}", Toast.LENGTH_LONG).show()
+
+
         return binding.root
     }
 }

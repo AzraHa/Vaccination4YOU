@@ -34,6 +34,18 @@
             app:destination="@id/covidFragment"
             app:popUpTo="@id/secondFragment"
             app:popUpToInclusive="true" />
+        <argument
+            android:name="first_name"
+            app:argType="string" />
+        <argument
+            android:name="last_name"
+            app:argType="string" />
+        <argument
+            android:name="birth_date"
+            app:argType="string" />
+        <argument
+            android:name="covid_positive"
+            app:argType="boolean" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
@@ -76,13 +88,46 @@
             app:destination="@id/endFragment"
             app:popUpTo="@id/secondFragment"
             app:popUpToInclusive="true" />
+        <argument
+            android:name="first_name"
+            app:argType="string" />
+        <argument
+            android:name="last_name"
+            app:argType="string" />
+        <argument
+            android:name="birth_date"
+            app:argType="string" />
+        <argument
+            android:name="covid_positive"
+            app:argType="boolean" />
+        <argument
+            android:name="r_categories"
+            app:argType="string" />
+
     </fragment>
     <fragment
         android:id="@+id/endFragment"
         android:name="com.example.projekat.EndFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_end" >
-
+        <argument
+            android:name="first_name"
+            app:argType="string" />
+        <argument
+            android:name="last_name"
+            app:argType="string" />
+        <argument
+            android:name="birth_date"
+            app:argType="string" />
+        <argument
+            android:name="covid_positive"
+            app:argType="boolean" />
+        <argument
+            android:name="r_categories"
+            app:argType="string" />
+        <argument
+            android:name="vaccine"
+            app:argType="string" />
     </fragment>
 
 </navigation>

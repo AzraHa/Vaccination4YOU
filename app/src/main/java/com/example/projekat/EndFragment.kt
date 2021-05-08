@@ -24,9 +24,13 @@ class EndFragment : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentEndBinding>(
             inflater, R.layout.fragment_end, container, false)
 
+        val args = EndFragmentArgs.fromBundle(requireArguments())
+
+        val first_name = binding.endImeId.text.toString()
 
         return binding.root
     }
+
 
 
 }
