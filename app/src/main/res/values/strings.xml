@@ -58,4 +58,12 @@
     <string name="datum_r">Datum rođenja : </string>
     <string name="datum">Datum : </string>
     <string name="share_data">Moji podaci za vakcinaciju :\nIme: %1$s\nVakcina: %2$s\nDatum vakcinacije: %3$s </string>
+    <string name="pozitivan">Pozitivan</string>
+    <string name="negativan">Negativan</string>
+    <string name="dijabeticar_P">Dijabeticar\n</string>
+    <string name="trudnica_P">Trudnica\n</string>
+    <string name="hemodijaliza_P">Hemodijalizni pacijent\n</string>
+    <string name="respiratorne_smetnje_P">Pacijent sa respiratornim smetnjama\n</string>
+    <string name="onkoloski_P">Onkoloski pacijent\n</string>
+    <string name="NONE">Ne spadate u kategoriju rizicno ugrozenih pacijenata</string>
 </resources>

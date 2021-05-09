@@ -98,7 +98,7 @@
                     tools:text="@string/Sputnik" />
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/astraZeneca"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/AstraZeneca"

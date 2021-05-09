@@ -50,23 +50,32 @@ class DataFragment : Fragment() {
             checkbox5 = binding.onkoloskiId
             checkbox6 = binding.nistaCheckboxId
 
-            if(checkbox1.isChecked){
-                r_categories += "Dijabeticar\n"
-            }
-            if(checkbox2.isChecked){
-                r_categories += "Trudnica\n"
-            }
-            if(checkbox3.isChecked){
-                r_categories += "Hemodijalizni pacijent\n"
-            }
-            if(checkbox4.isChecked){
-                r_categories += "Pacijent sa respiratornim smetnjama\n"
-            }
-            if(checkbox5.isChecked){
-                r_categories += "Onkoloski pacijent\n"
-            }
             if(checkbox6.isChecked){
-                r_categories += "Ne spadate u kategoriju rizicno ugrozenih pacijenata"
+                if(r_categories == "") {
+                    r_categories += getString(R.string.NONE)
+                }
+                checkbox1.isChecked = false
+                checkbox2.isChecked = false
+                checkbox3.isChecked = false
+                checkbox4.isChecked = false
+                checkbox5.isChecked = false
+            } else {
+                r_categories = ""
+                if (checkbox1.isChecked) {
+                    r_categories += getString(R.string.dijabeticar_P)
+                }
+                if (checkbox2.isChecked) {
+                    r_categories += getString(R.string.trudnica_P)
+                }
+                if (checkbox3.isChecked) {
+                    r_categories += getString(R.string.hemodijaliza_P)
+                }
+                if (checkbox4.isChecked) {
+                    r_categories += getString(R.string.respiratorne_smetnje_P)
+                }
+                if (checkbox5.isChecked) {
+                    r_categories += getString(R.string.onkoloski_P)
+                }
             }
 
             view.findNavController().navigate(DataFragmentDirections.actionDataFragmentToCovidFragment(first_name,last_name,birth_date,covid_positive,r_categories))
@@ -74,7 +83,5 @@ class DataFragment : Fragment() {
 
         return binding.root
     }
-
-
 
 }

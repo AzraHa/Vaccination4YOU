@@ -45,10 +45,10 @@ class CovidFragment : Fragment() {
 
             pozitivan = if (covidPositive) {
                 c1.add(Calendar.DAY_OF_YEAR, 90)
-                "Pozitivan"
+                getString(R.string.pozitivan)
             } else {
                 c1.add(Calendar.DAY_OF_YEAR, 30)
-                "Negativan"
+                getString(R.string.negativan)
             }
 
             df = SimpleDateFormat("dd/MM/yyy")
@@ -63,23 +63,26 @@ class CovidFragment : Fragment() {
                 var odgovor = 0
 
                 when (checkedId) {
-                    R.id.pfizer-> odgovor = 1
+                    R.id.pfizer -> odgovor = 1
                     R.id.moderna -> odgovor = 2
-                    R.id.johnson-> odgovor = 3
+                    R.id.johnson -> odgovor = 3
                     R.id.sinopharm -> odgovor = 4
-                    R.id.sputnik-> odgovor = 5
+                    R.id.sputnik -> odgovor = 5
+                    R.id.astraZeneca -> odgovor = 6
                 }
 
                 vaccine = if(odgovor == 1){
-                    "Pfizer "
+                    getString(R.string.Pfizer_BioNTech)
                 }else if(odgovor == 2){
-                    "Moderna "
+                    getString(R.string.Moderna)
                 }else if(odgovor == 3){
-                    "Johnson "
+                    getString(R.string.Johnson)
                 }else if(odgovor == 4) {
-                    "Sinopharm "
-                } else{
-                    "Sputnik V"
+                    getString(R.string.Sinopharm)
+                } else if(odgovor == 5){
+                    getString(R.string.Sputnik)
+                } else {
+                    getString(R.string.AstraZeneca)
                 }
             }
             view.findNavController().navigate(CovidFragmentDirections.actionCovidFragmentToEndFragment(name,birthDate,pozitivan,rCategories,vaccine,datum))

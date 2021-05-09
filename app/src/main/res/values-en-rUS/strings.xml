@@ -59,4 +59,12 @@
     <string name="datum_r">Date of birth : </string>
     <string name="datum">Date : </string>
     <string name="share_data">My data for the vaccination :\nFirst name: %1$s\nVaccine: %2$s\nDate of vaccination: %3$s </string>
+    <string name="pozitivan">Positive</string>
+    <string name="negativan">Negative</string>
+    <string name="dijabeticar_P">Diabetic\n</string>
+    <string name="trudnica_P">Pregnant\n</string>
+    <string name="hemodijaliza_P">On hemodialysis\n</string>
+    <string name="respiratorne_smetnje_P">Respiratory diseases\n</string>
+    <string name="onkoloski_P">Oncology patient\n</string>
+    <string name="NONE">You are not a part of problematic categories</string>
 </resources>
