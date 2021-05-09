@@ -49,4 +49,14 @@
     <string name="inkubacija_text">It is estimated that the incubation period lasts from 2 to 14 days, on average 5 to 6 days.</string>
     <string name="lijecenje">Is there a possibility of specific treatment for the disease caused by the new coronavirus?</string>
     <string name="lijecenje_text">There is no specific treatment for this disease. Treatment of an infected patient related to the coronavirus is treating clinical symptoms ie. high temperature and providing care. Currently there are vaccines for preventing the spread and infection caused by SARS-COVID-19.</string>
+    <string name="nista">None of the above</string>
+    <string name="kategorije_end">Categories</string>
+    <string name="boluje_covid">COVID-19 diagnose : </string>
+    <string name="Kategorije_rizika">Problematic categories : </string>
+    <string name="ime">Full name : </string>
+    <string name="datum_vakcine">Date of vaccination : </string>
+    <string name="Vakcina">Vaccine : </string>
+    <string name="datum_r">Date of birth : </string>
+    <string name="datum">Date : </string>
+    <string name="share_data">My data for the vaccination :\nFirst name: %1$s\nVaccine: %2$s\nDate of vaccination: %3$s </string>
 </resources>
