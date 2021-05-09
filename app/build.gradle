@@ -53,5 +53,7 @@ dependencies {
 
     implementation "com.google.android.material:material:$version"
 
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
 
 }
