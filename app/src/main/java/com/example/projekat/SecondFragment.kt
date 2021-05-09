@@ -22,14 +22,15 @@ class SecondFragment : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentSecondBinding>(
             inflater, R.layout.fragment_second, container, false)
 
-        first_name = binding.firstNameId.text.toString();
-        last_name = binding.lastNameId.text.toString();
-        birth_date = binding.birthDateId.text.toString();
-
         binding.secondFButtonId.setOnClickListener{view : View ->
-            view.findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToVaccineFragment(first_name,last_name,birth_date))}
 
+            first_name = binding.firstNameId.text.toString()
+            last_name = binding.lastNameId.text.toString()
+            birth_date = binding.birthDateId.text.toString()
+
+            view.findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToVaccineFragment(first_name,last_name,birth_date))
+
+        }
         return binding.root
-
     }
 }

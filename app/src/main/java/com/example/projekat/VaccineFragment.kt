@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.projekat.databinding.FragmentVaccineBinding
@@ -28,11 +27,12 @@ class VaccineFragment : Fragment() {
 
         val args = VaccineFragmentArgs.fromBundle(requireArguments())
 
-        first_name = args.firstName
-        last_name = args.lastName
-        birth_date = args.birthDate
-
         binding.covidNextBId.setOnClickListener{view : View ->
+
+            first_name = args.firstName
+            last_name = args.lastName
+            birth_date = args.birthDate
+
             val checkedId = binding.covidQRadioId.checkedRadioButtonId;
 
             if (-1 != checkedId) {
@@ -49,9 +49,6 @@ class VaccineFragment : Fragment() {
                 view.findNavController().navigate(VaccineFragmentDirections.actionVaccineFragmentToDataFragment(first_name,last_name,birth_date,suffer_from))
             }
         }
-
-
-        Toast.makeText(context, "NumCorrect: ${args.firstName}, NumQuestions: ${args.lastName}", Toast.LENGTH_LONG).show()
 
 
         return binding.root

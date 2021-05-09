@@ -6,7 +6,7 @@
     <string name="info">Informacije COVID-19</string>
     <string name="first_name">Ime</string>
     <string name="last_name">Prezime</string>
-    <string name="birth_date">Datum rođenja</string>
+    <string name="birth_date">Datum rođenja ( dd/mm/yyy ) </string>
     <string name="unos_podataka">Molimo unesite Vaše podatke</string>
     <string name="dalje">Dalje</string>
     <string name="kategorije">"Ukoliko spadate u sljedeće kategorije molimo Vas da označite polja "</string>
@@ -49,4 +49,13 @@
     <string name="inkubacija_text">Procjenjuje se kako inkubacija traje od 2 do 14 dana (prosječno 5-6 dana).</string>
     <string name="lijecenje">Postoji li specifično liječenje bolesti uzrokovane novim koronavirusom?</string>
     <string name="lijecenje_text">Ne postoji posebno liječenje za ovu bolest. Pristup liječenju pacijenata s infekcijama vezanim uz koronaviruse je liječenje kliničkih simptoma (npr. povišene temperature) i pružanje njege. Trenutno postoje cjepiva za suzbijanje sirenja zaraze infekcijom SARS-COVID-19.</string>
+    <string name="nista">Nista od navedenog</string>
+    <string name="kategorije_end">kategorije</string>
+    <string name="boluje_covid">COVID-19 pozitivan : </string>
+    <string name="Kategorije_rizika">Rizicne kategorije : </string>
+    <string name="ime">Ime i prezime : </string>
+    <string name="datum_vakcine">Datum vakcinacije : </string>
+    <string name="Vakcina">Vakcina : </string>
+    <string name="datum_r">Datum rođenja : </string>
+    <string name="datum">Datum : </string>
 </resources>

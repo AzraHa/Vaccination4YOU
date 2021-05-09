@@ -50,16 +50,16 @@ class CovidFragment : Fragment() {
                     R.id.sputnik-> odgovor = 5
                 }
 
-                vaccine = if(odgovor == 1){
-                    "Pfizer "
+                if(odgovor == 1){
+                    vaccine = "Pfizer "
                 }else if(odgovor == 2){
-                    "Moderna "
+                    vaccine = "Moderna "
                 }else if(odgovor == 3){
-                    "Johnson "
+                    vaccine = "Johnson "
                 }else if(odgovor == 4) {
-                    "Sinopharm "
+                    vaccine = "Sinopharm "
                 } else{
-                    "Sputnik V"
+                    vaccine = "Sputnik V"
                 }
             }
             view.findNavController().navigate(CovidFragmentDirections.actionCovidFragmentToEndFragment(first_name,last_name,birth_date,covid_positive,r_categories,vaccine))

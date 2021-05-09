@@ -76,6 +76,12 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/trudnoca" />
+            <CheckBox
+                android:id="@+id/nista_checkbox_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/nista" />
 
             <Button
                 android:id="@+id/data_f_button_id"

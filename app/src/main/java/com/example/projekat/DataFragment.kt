@@ -20,6 +20,7 @@ class DataFragment : Fragment() {
     private lateinit var checkbox3: CheckBox
     private lateinit var checkbox4: CheckBox
     private lateinit var checkbox5: CheckBox
+    private lateinit var checkbox6: CheckBox
     private var first_name : String = ""
     private var last_name : String = ""
     private var birth_date : String = ""
@@ -40,29 +41,34 @@ class DataFragment : Fragment() {
         birth_date = args.birthDate
         covid_positive = args.covidPositive
 
-        checkbox1 = binding.dijabeticarCheckboxId
-        checkbox2 = binding.trudnocaCheckboxId
-        checkbox3 = binding.hemodijalizaCheckboxId
-        checkbox4 = binding.respiratorneId
-        checkbox5 = binding.onkoloskiId
-
-        if(checkbox1.isChecked){
-            r_categories += "Dijabeticar , "
-        }
-        if(checkbox2.isChecked){
-            r_categories += "Trudnica , "
-        }
-        if(checkbox3.isChecked){
-            r_categories += "Hemodijalizni pacijent  , "
-        }
-        if(checkbox4.isChecked){
-            r_categories += "Pacijent sa respiratornim smetnjama  , "
-        }
-        if(checkbox5.isChecked){
-            r_categories += "Onkoloski pacijent , "
-        }
-
         binding.dataFButtonId.setOnClickListener{ view: View ->
+
+            checkbox1 = binding.dijabeticarCheckboxId
+            checkbox2 = binding.trudnocaCheckboxId
+            checkbox3 = binding.hemodijalizaCheckboxId
+            checkbox4 = binding.respiratorneId
+            checkbox5 = binding.onkoloskiId
+            checkbox6 = binding.nistaCheckboxId
+
+            if(checkbox1.isChecked){
+                r_categories += "Dijabeticar\n"
+            }
+            if(checkbox2.isChecked){
+                r_categories += "Trudnica\n"
+            }
+            if(checkbox3.isChecked){
+                r_categories += "Hemodijalizni pacijent\n"
+            }
+            if(checkbox4.isChecked){
+                r_categories += "Pacijent sa respiratornim smetnjama\n"
+            }
+            if(checkbox5.isChecked){
+                r_categories += "Onkoloski pacijent\n"
+            }
+            if(checkbox6.isChecked){
+                r_categories += "Ne spadate u kategoriju rizicno ugrozenih pacijenata"
+            }
+
             view.findNavController().navigate(DataFragmentDirections.actionDataFragmentToCovidFragment(first_name,last_name,birth_date,covid_positive,r_categories))
         }
 
