@@ -16,7 +16,7 @@
     <string name="dijabeticar">I am diabetic.</string>
     <string name="hemodijaliza">I am going on hemodialysis.</string>
     <string name="onkoloski">I am an oncology patient.</string>
-    <string name="about_text">First app version \n Created by Riad Pap and Azra Hadžihajdarević as a project for subject Razvoj mobilnih aplikacija.\n\n Application made with <b>Kotlin</b> programming language.</string>
+    <string name="about_text">First app version\nCreated by Riad Pap and Azra Hadžihajdarević as a project for subject Razvoj mobilnih aplikacija.\n\nApplication made with <b>Kotlin</b> programming language.</string>
     <string name="izbor_vakcine">Choose vaccine</string>
     <string name="Pfizer_BioNTech">Pfizer-BioNTech</string>
     <string name="Moderna">Moderna</string>

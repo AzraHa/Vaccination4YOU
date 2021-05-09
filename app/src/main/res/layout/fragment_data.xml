@@ -12,8 +12,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="50dp"
-            android:layout_marginBottom="50dp"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="0dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <CheckBox
                 android:id="@+id/dijabeticar_checkbox_id"
@@ -77,25 +77,25 @@
                 android:gravity="center"
                 android:text="@string/trudnoca" />
 
-            <Button
-                android:id="@+id/data_f_button_id"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="50sp"
-                android:layout_marginLeft="50sp"
-                android:layout_marginTop="50sp"
-                android:layout_marginEnd="50sp"
-                android:layout_marginRight="50sp"
-                android:layout_marginBottom="100sp"
-                android:background="@color/secondaryLightColor"
-                android:text="@string/dalje"
-                android:textColor="@color/primaryTextColor"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:backgroundTint="@color/primaryDarkColor"
-                app:rippleColor="@color/primaryLightColor" />
-
         </LinearLayout>
+
+        <Button
+            android:id="@+id/data_f_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/secondaryLightColor"
+            android:text="@string/dalje"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/primaryDarkColor"
+            app:rippleColor="@color/primaryLightColor" />
 
     </LinearLayout>
 
