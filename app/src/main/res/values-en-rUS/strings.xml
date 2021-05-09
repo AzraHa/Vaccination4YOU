@@ -7,7 +7,7 @@
     <string name="info">Info COVID-19</string>
     <string name="first_name">First name</string>
     <string name="last_name">Last name</string>
-    <string name="birth_date">Date of birth</string>
+    <string name="birth_date">Date of birth ( dd/mm/yyyy ) </string>
     <string name="unos_podataka">Please enter your data</string>
     <string name="dalje">Next</string>
     <string name="kategorije">If you fall into the following categories, please check the boxes.</string>

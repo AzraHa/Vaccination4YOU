@@ -6,7 +6,7 @@
     <string name="info">Informacije COVID-19</string>
     <string name="first_name">Ime</string>
     <string name="last_name">Prezime</string>
-    <string name="birth_date">Datum rođenja ( dd/mm/yyy ) </string>
+    <string name="birth_date">Datum rođenja ( dd/mm/yyyy ) </string>
     <string name="unos_podataka">Molimo unesite Vaše podatke</string>
     <string name="dalje">Dalje</string>
     <string name="kategorije">"Ukoliko spadate u sljedeće kategorije molimo Vas da označite polja "</string>

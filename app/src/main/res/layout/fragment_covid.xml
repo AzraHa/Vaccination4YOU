@@ -33,17 +33,6 @@
                 android:textColorLink="@color/primaryTextColor"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-            <TextView
-                android:id="@+id/test"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:text="@string/izbor_vakcine"
-                android:textColor="@color/primaryTextColor"
-                android:textColorLink="@color/primaryTextColor"
-                android:textSize="20sp"
-                android:textStyle="bold" />
 
 
         </LinearLayout>
