@@ -111,22 +111,22 @@
         android:label="@string/app_name"
         tools:layout="@layout/fragment_end" >
         <argument
-            android:name="first_name"
-            app:argType="string" />
-        <argument
-            android:name="last_name"
+            android:name="name"
             app:argType="string" />
         <argument
             android:name="birth_date"
             app:argType="string" />
         <argument
             android:name="covid_positive"
-            app:argType="boolean" />
+            app:argType="string" />
         <argument
             android:name="r_categories"
             app:argType="string" />
         <argument
             android:name="vaccine"
+            app:argType="string" />
+        <argument
+            android:name="datum"
             app:argType="string" />
     </fragment>
 
