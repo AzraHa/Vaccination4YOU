@@ -47,14 +47,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/respiratorne_smetnje" />
+                android:text="@string/dijabeticar" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/respiratorne_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/dijabeticar" />
+                android:text="@string/respiratorne_smetnje" />
 
             <CheckBox
                 android:id="@+id/hemodijaliza_checkbox_id"
@@ -64,7 +64,7 @@
                 android:text="@string/hemodijaliza" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/onkoloski_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -76,6 +76,12 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/trudnoca" />
+            <CheckBox
+                android:id="@+id/nista_checkbox_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/nista" />
 
         </LinearLayout>
 
