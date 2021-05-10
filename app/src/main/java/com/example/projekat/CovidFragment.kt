@@ -26,9 +26,6 @@ class CovidFragment : Fragment() {
     private var vaccine : String = ""
     private var pozitivan : String = ""
     private var datum : String = ""
-    private var datumFile : String = ""
-    private var nameFile : String = ""
-    private var contentsFile : String = ""
 
     @SuppressLint("SimpleDateFormat")
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -46,7 +43,6 @@ class CovidFragment : Fragment() {
         binding.covidFButtonId.setOnClickListener{view : View ->
 
             /*https://stackoverflow.com/questions/56440762/how-add-30-days-in-current-date*/
-            val date = Date()
             val c1 = Calendar.getInstance()
 
             pozitivan = if (covidPositive) {
@@ -58,14 +54,9 @@ class CovidFragment : Fragment() {
             }
 
             val df = SimpleDateFormat("dd/MM/yyy")
-            val currentDate = df.format(date)
             val resultDate = c1.time
             val dueDate = df.format(resultDate)
             datum = dueDate.toString()
-
-            nameFile = args.firstName + "_" + args.lastName
-            val fileDate = SimpleDateFormat("dd_MM_yyy")
-            datumFile = fileDate.format(resultDate).toString()
 
             val checkedId = binding.covidQRadioId.checkedRadioButtonId;
 
@@ -98,24 +89,6 @@ class CovidFragment : Fragment() {
             }
 
             view.findNavController().navigate(CovidFragmentDirections.actionCovidFragmentToEndFragment(name,birthDate,pozitivan,rCategories,vaccine,datum))
-
-            try {
-                contentsFile = getString(R.string.ime) + " " + name + "\n" +
-                               getString(R.string.datum_r) + " " + birthDate + "\n" +
-                               getString(R.string.boluje_covid) + " " + pozitivan + "\n" +
-                               getString(R.string.Kategorije_rizika) + " " + "\n" + rCategories + "\n" +
-                               getString(R.string.datum_vakcine) + " " + datum + "\n" +
-                               getString(R.string.Vakcina) + " " + vaccine + "\n" +
-                               getString(R.string.datum) + " " + currentDate.toString()
-                val path = context!!.getExternalFilesDir(null)
-                val file = File(path, getString(R.string.app_name) + "_" + nameFile + "_" + datumFile + ".txt")
-                FileOutputStream(file).use {
-                   it.write(contentsFile.toByteArray())
-                }
-                Toast.makeText(context, getString(R.string.toastF_success, path), Toast.LENGTH_LONG).show()
-            }catch (ex : Exception) {
-                Toast.makeText(context, getString(R.string.toastF_fail), Toast.LENGTH_SHORT).show()
-            }
 
         }
 

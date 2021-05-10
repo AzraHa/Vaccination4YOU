@@ -4,9 +4,13 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.projekat.databinding.FragmentEndBinding
+import java.io.File
+import java.io.FileOutputStream
+import java.lang.Exception
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -19,7 +23,10 @@ class EndFragment : Fragment() {
     private var rCategories : String = ""
     private var vaccine : String = ""
     private var datum : String = ""
-
+    private var datumFile : String = ""
+    private var nameFile : String = ""
+    private var contentsFile : String = ""
+    private var currentDate : String = ""
 
     @SuppressLint("SimpleDateFormat")
     override fun onCreateView(
@@ -46,7 +53,11 @@ class EndFragment : Fragment() {
 
         val date = Date()
         val df = SimpleDateFormat("dd/MM/yyy")
-        val currentDate = df.format(date)
+        currentDate = df.format(date).toString()
+
+        nameFile = name.replace(" ", "_")
+        val fileDate = SimpleDateFormat("dd_MM_yyy")
+        datumFile = fileDate.format(Calendar.getInstance().time).toString()
 
         binding.imeText.text = this.name
         binding.datumRText.text = this.birthDate
@@ -54,7 +65,7 @@ class EndFragment : Fragment() {
         binding.rizicneKategorijeText.text = this.rCategories
         binding.vakcinaText.text = this.vaccine
         binding.datumId.text = datum
-        binding.datumText.text = currentDate.toString()
+        binding.datumText.text = currentDate
 
         return binding.root
 
@@ -83,16 +94,38 @@ class EndFragment : Fragment() {
         if (null == getShareIntent().resolveActivity(requireActivity().packageManager)) {
             // hide the menu item if it doesn't resolve
             menu.findItem(R.id.share)?.isVisible = false
+            menu.findItem(R.id.savefile_id)?.isVisible = true
         }
     }
     // Sharing from the Menu
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.share -> shareSuccess()
+            R.id.savefile_id -> saveFile()
         }
         return super.onOptionsItemSelected(item)
     }
 
+    private fun saveFile() {
+
+        try {
+            contentsFile = getString(R.string.ime) + " " + name + "\n" +
+                    getString(R.string.datum_r) + " " + birthDate + "\n" +
+                    getString(R.string.boluje_covid) + " " + covidPositive + "\n" +
+                    getString(R.string.Kategorije_rizika) + " " + "\n" + rCategories + "\n" +
+                    getString(R.string.datum_vakcine) + " " + datum + "\n" +
+                    getString(R.string.Vakcina) + " " + vaccine + "\n" +
+                    getString(R.string.datum) + " " + currentDate
+            val path = context!!.getExternalFilesDir(null)
+            val file = File(path, getString(R.string.app_name) + "_" + nameFile + "_" + datumFile + ".txt")
+            FileOutputStream(file).use {
+                it.write(contentsFile.toByteArray())
+            }
+            Toast.makeText(context, getString(R.string.toastF_success, path), Toast.LENGTH_LONG).show()
+        }catch (ex : Exception) {
+            Toast.makeText(context, getString(R.string.toastF_fail), Toast.LENGTH_SHORT).show()
+        }
+    }
 
 
 }
