@@ -2,7 +2,6 @@ package com.example.projekat
 
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
@@ -13,11 +12,16 @@ import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
+    private lateinit var vaccinationTimer: VaccinationTimer
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
+
+        vaccinationTimer = VaccinationTimer(this.lifecycle)
+
         Timber.i("onCreate called")
-        val binding =
-            DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
         drawerLayout = binding.drawerLayout
 
@@ -34,10 +38,15 @@ class MainActivity : AppCompatActivity() {
         return NavigationUI.navigateUp(navController, drawerLayout)
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        Timber.i("onSaveInstanceState Called")
+    }
+
     override fun onStart() {
         super.onStart()
-
-        Timber.i("onStart Called")
+        vaccinationTimer.startTimer()
+        Timber.i("onStart called")
     }
 
     override fun onResume() {
@@ -47,6 +56,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
+        vaccinationTimer.stopTimer()
         Timber.i("onPause Called")
     }
 

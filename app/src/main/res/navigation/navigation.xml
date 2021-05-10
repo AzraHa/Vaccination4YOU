@@ -22,7 +22,9 @@
         tools:layout="@layout/fragment_second" >
         <action
             android:id="@+id/action_secondFragment_to_vaccineFragment"
-            app:destination="@id/vaccineFragment"/>
+            app:destination="@id/vaccineFragment"
+            app:popUpTo="@id/secondFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/dataFragment"
