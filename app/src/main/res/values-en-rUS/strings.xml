@@ -58,7 +58,7 @@
     <string name="Vakcina">Vaccine : </string>
     <string name="datum_r">Date of birth : </string>
     <string name="datum">Date : </string>
-    <string name="share_data">My data for the vaccination :\nFirst name: %1$s\nVaccine: %2$s\nDate of vaccination: %3$s </string>
+    <string name="share_data">My data for the vaccination :\nFull name: %1$s\nVaccine: %2$s\nDate of vaccination: %3$s </string>
     <string name="pozitivan">Positive</string>
     <string name="negativan">Negative</string>
     <string name="dijabeticar_P">Diabetic\n</string>

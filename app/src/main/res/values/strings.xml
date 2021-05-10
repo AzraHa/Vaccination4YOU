@@ -57,7 +57,7 @@
     <string name="Vakcina">Vakcina : </string>
     <string name="datum_r">Datum rođenja : </string>
     <string name="datum">Datum : </string>
-    <string name="share_data">Moji podaci za vakcinaciju :\nIme: %1$s\nVakcina: %2$s\nDatum vakcinacije: %3$s </string>
+    <string name="share_data">Moji podaci za vakcinaciju :\nIme i prezime: %1$s\nVakcina: %2$s\nDatum vakcinacije: %3$s </string>
     <string name="pozitivan">Pozitivan</string>
     <string name="negativan">Negativan</string>
     <string name="dijabeticar_P">Dijabeticar\n</string>
