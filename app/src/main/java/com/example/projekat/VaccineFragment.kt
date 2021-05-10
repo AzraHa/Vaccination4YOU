@@ -12,9 +12,6 @@ import com.example.projekat.databinding.FragmentVaccineBinding
 
 class VaccineFragment : Fragment() {
 
-    /*U zavisnosti od odgovora sa ovog fragmenta imamo dvije mogucnosti:
-    * data fragment ili end fragment */
-
     private var first_name : String = ""
     private var last_name : String = ""
     private var birth_date : String = ""
