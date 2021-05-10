@@ -67,4 +67,6 @@
     <string name="respiratorne_smetnje_P">Respiratory diseases\n</string>
     <string name="onkoloski_P">Oncology patient\n</string>
     <string name="NONE">You are not a part of problematic categories</string>
+    <string name="toastF_success">Your data was successfully saved. Location: %1$s</string>
+    <string name="toastF_fail">Your data was not saved.</string>
 </resources>

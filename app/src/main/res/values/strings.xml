@@ -66,4 +66,6 @@
     <string name="respiratorne_smetnje_P">Pacijent sa respiratornim smetnjama\n</string>
     <string name="onkoloski_P">Onkoloski pacijent\n</string>
     <string name="NONE">Ne spadate u kategoriju rizicno ugrozenih pacijenata</string>
+    <string name="toastF_success">Vasi podaci su uspjesno sacuvani. Lokacija: %1$s</string>
+    <string name="toastF_fail">Vasi podaci nisu uspjesno sacuvani.</string>
 </resources>
