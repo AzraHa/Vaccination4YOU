@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Vaccination</string>
-    <string name="welcome">Welcome</string>
-    <string name="start">Start</string>
-    <string name="about">About</string>
+    <string name="app_name">Vaccination4YOU\u2122</string>
+    <string name="welcome">Welcome to\nVaccination4YOU\u2122</string>
+    <string name="start">Register now \u27A4</string>
+    <string name="about">About Us</string>
     <string name="info">Info COVID-19</string>
     <string name="first_name">First name</string>
     <string name="last_name">Last name</string>
     <string name="birth_date">Date of birth ( dd/mm/yyyy ) </string>
-    <string name="unos_podataka">Please enter your data</string>
+    <string name="unos_podataka">Please enter your\nfull name \u0026 DOB.</string>
     <string name="dalje">Next</string>
     <string name="kategorije">If you fall into the following categories, please check the boxes.</string>
     <string name="trudnoca">I am pregnant.</string>
@@ -16,8 +16,8 @@
     <string name="dijabeticar">I am diabetic.</string>
     <string name="hemodijaliza">I am going on hemodialysis.</string>
     <string name="onkoloski">I am an oncology patient.</string>
-    <string name="about_text">First app version\nCreated by Riad Pap and Azra Hadžihajdarević as a project for subject Razvoj mobilnih aplikacija.\n\nApplication made with <b>Kotlin</b> programming language.</string>
-    <string name="izbor_vakcine">Choose vaccine</string>
+    <string name="about_text">First app aka First project\nCreated by Riad Pap and Azra Hadžihajdarević as a project for subject Razvoj mobilnih aplikacija.\n\nApplication made with <b>Kotlin</b> programming language.</string>
+    <string name="izbor_vakcine">Choose a vaccine:</string>
     <string name="Pfizer_BioNTech">Pfizer-BioNTech</string>
     <string name="Moderna">Moderna</string>
     <string name="Sinopharm">Sinopharm</string>
@@ -32,17 +32,17 @@
     <string name="vakcina">Vaccine</string>
     <string name="AstraZeneca">AstraZeneca</string>
     <string name="Sta_je_covid">What is Coronavirus?</string>
-    <string name="Covid_19">Coronaviruses are a large family of viruses, which we find in humans and animals. Under an electron microscope these viruses, in appearance resemble a crown, lat. "corona", hence the name coronaviruses. Some coronaviruses were found in the 1960s which were the cause of peoples illnesses, from the common cold to severe respiratory diseases. From 2003. new coronaviruses were being discovered, which originated in animals and transferred to humans and started to spread between people. So, after SARS being discovered in China, 2002. and MERS in the Middle East, 2012.(which is still active), new coronavirus originated in China.</string>
-    <string name="Covid_19_novo">What is the new Coronavirus?</string>
+    <string name="Covid_19">Coronaviruses are a large family of viruses, which can be found in humans and animals. Under an electron microscope these viruses, in appearance resemble a crown, lat. "corona", hence the name coronaviruses. Some coronaviruses were found in the 1960s which were the cause of peoples illnesses, from the common cold to severe respiratory diseases. From 2003. new coronaviruses were being discovered, which originated in animals and transferred to humans and started to spread among people. So, after SARS being discovered in China, 2002. and MERS in the Middle East, 2012.(which is still active), a new coronavirus originated in China.</string>
+    <string name="Covid_19_novo">What is the new coronavirus?</string>
     <string name="sta_text">New coronavirus is a new type of coronavirus which has not yet been discovered in humans. World Health Organization (WHO) named it SARS-Cov-2 (SARS-coronavirus-2) and the disease which COVID-19 causes (\"coronavirus disease\"). It was discovered in China, late 2019.</string>
     <string name="opasnost">How dangerous is the new coronavirus?</string>
-    <string name="opasnost_text">With all available information, new coronavirus infection causes symptoms like high temperature, dry cough and tiredness, while in low cases body ache, nose clog and sore throat. One in five people can have difficulty breathing or develop pneumonia, also in low cases even death. Looks like older population and people with chronic diseases ie. heart problems and diabetes, are prone to severe types of the disease. Worth mentioning everyone has a possibility of getting the severe type of COVID-19 infection. Specific number of infected people do not show any symptoms and they belong to asymptomatic group.</string>
+    <string name="opasnost_text">With all available information, new coronavirus infection causes symptoms like high temperature, dry cough and tiredness, while in some cases body ache, nose clog and sore throat. One in five people can have difficulty breathing or develop pneumonia, also in some cases worst result, which is death. Looks like older population and people with chronic diseases ie. heart problems and diabetes, are prone to severe types of the disease. Worth mentioning everyone has a possibility of getting the severe type of COVID-19 infection. Specific number of infected people do not show any symptoms and they belong to asymptomatic group.</string>
     <string name="z_zivotinje">Can a person get infected with the new coronavirus trough an animal?</string>
-    <string name="z_zivotinje_text">SARS-CoV was transmitted trough Asian palm civet, part of closest animals to cats, while MERS-CoV is transmitted trough camels to people. There are some discovered coronaviruses which circulate among animals, but have not yet been transmitted to people. Animal origin of the new coronavirus has not yet been identified, which does not mean a person can not get infected by any animal or pet. Probable origin of the disease is some animal which was being sold at a market in Wuhan.</string>
+    <string name="z_zivotinje_text">SARS-CoV was transmitted trough Asian palm civet, part of animals closest to cats, while MERS-CoV is transmitted trough camels to people. There are some discovered coronaviruses which circulate among animals, but have not yet been transmitted to people. Animal origin of the new coronavirus has not yet been identified, which does not mean a person can not get infected by any animal or pet. Probable origin of the disease is some animal which was being sold at a market in Wuhan.</string>
     <string name="prenos">Can the new coronavirus transmit from person to person?</string>
     <string name="prenos_text">Yes, the new coronavirus causes respiratory disease and can transmit from person to person, usually after a close encounter with the infected person, ie. household, at the work place or medical/health institution.</string>
     <string name="sirenje">How does the new coronavirus spread?</string>
-    <string name="sirenje_text">The new coronavirus is a respiratory virus which primary spreads trough contact with the infected persons saliva particles originating form the mouth or nose while talking, coughing, sneezing and which come in to contact with other persons inside of nose, mouth or eyes. Particles can fall on any neighbouring surface, which in most cases are touched and spread further by people. That is why it is important for everybody to practice respiratory hygiene and keep physical distance from other people at least 2 metres. In close contact it is recommended the use of face masks which cover nose and mouth. Regular and correct hand washing decreases the likelihood of infection..</string>
+    <string name="sirenje_text">The new coronavirus is a respiratory virus which primary spreads trough contact with the infected persons saliva particles originating from the mouth or nose while talking, coughing, sneezing and which come in to contact with other persons exposed insides of nose, mouth or eyes. Particles can fall on any neighbouring surfaces, which in most cases are touched and spread further by people. That is why it is important for everybody to practice respiratory hygiene and keep physical distance from other people at least 2 metres. In close contact it is recommended the use of face masks which cover nose and mouth. Regular and correct hand washing decreases the likelihood of infection.</string>
     <string name="povrsine">How long can the new coronavirus survive on a surface?</string>
     <string name="povrsine_text">It is still unknown how long the new coronavirus can survive on a surface. Today\'s understanding of the virus tells us it can survive couple of days on a surface. Usual disinfectants destroy the virus.</string>
     <string name="inkubacija">How long is the incubation period of the new coronavirus?</string>
@@ -54,11 +54,11 @@
     <string name="boluje_covid">COVID-19 diagnose : </string>
     <string name="Kategorije_rizika">Problematic categories : </string>
     <string name="ime">Full name : </string>
-    <string name="datum_vakcine">Date of vaccination : </string>
+    <string name="datum_vakcine">Vaccination date : </string>
     <string name="Vakcina">Vaccine : </string>
     <string name="datum_r">Date of birth : </string>
     <string name="datum">Date : </string>
-    <string name="share_data">My data for the vaccination :\nFull name: %1$s\nVaccine: %2$s\nDate of vaccination: %3$s </string>
+    <string name="share_data">My data for the vaccination :\nFull name: %1$s\nVaccine: %2$s\nDate of vaccination: %3$s\nWhere is yours?</string>
     <string name="pozitivan">Positive</string>
     <string name="negativan">Negative</string>
     <string name="dijabeticar_P">Diabetic\n</string>
@@ -73,4 +73,5 @@
     <string name="registrovani_za_vakcinu">Random number</string>
     <string name="ljudi_za_vakcinu">Current number\nregistered for the vaccine :</string>
     <string name="img_desc">Crossed coronavirus</string>
+    <string name="not_checked_boxes"> Please check one of the boxes to continue.</string>
 </resources>

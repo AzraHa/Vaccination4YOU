@@ -28,7 +28,14 @@ class SecondFragment : Fragment() {
             last_name = binding.lastNameId.text.toString()
             birth_date = binding.birthDateId.text.toString()
 
-            view.findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToVaccineFragment(first_name,last_name,birth_date))
+            if(first_name != "" && last_name != "" && birth_date != ""){
+
+                view.findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToVaccineFragment(first_name,last_name,birth_date))
+
+            } else {
+                Toast.makeText(context, getString(R.string.unos_podataka), Toast.LENGTH_SHORT).show()
+            }
+
 
         }
         return binding.root

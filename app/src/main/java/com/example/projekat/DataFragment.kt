@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.projekat.databinding.FragmentDataBinding
@@ -41,7 +42,7 @@ class DataFragment : Fragment() {
         birth_date = args.birthDate
         covid_positive = args.covidPositive
 
-        binding.dataFButtonId.setOnClickListener{ view: View ->
+        binding.dataFButtonId.setOnClickListener { view: View ->
 
             checkbox1 = binding.dijabeticarCheckboxId
             checkbox2 = binding.trudnocaCheckboxId
@@ -50,8 +51,8 @@ class DataFragment : Fragment() {
             checkbox5 = binding.onkoloskiId
             checkbox6 = binding.nistaCheckboxId
 
-            if(checkbox6.isChecked){
-                if(r_categories == "") {
+            if (checkbox6.isChecked) {
+                if (r_categories == "") {
                     r_categories += getString(R.string.NONE)
                 }
                 checkbox1.isChecked = false
@@ -78,7 +79,20 @@ class DataFragment : Fragment() {
                 }
             }
 
-            view.findNavController().navigate(DataFragmentDirections.actionDataFragmentToCovidFragment(first_name,last_name,birth_date,covid_positive,r_categories))
+            if (r_categories == "") {
+                Toast.makeText(context, getString(R.string.not_checked_boxes), Toast.LENGTH_SHORT)
+                    .show()
+            } else {
+                view.findNavController().navigate(
+                    DataFragmentDirections.actionDataFragmentToCovidFragment(
+                        first_name,
+                        last_name,
+                        birth_date,
+                        covid_positive,
+                        r_categories
+                    )
+                )
+            }
         }
 
         return binding.root
