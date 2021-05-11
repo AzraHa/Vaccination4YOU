@@ -72,4 +72,5 @@
     <string name="savefile">Save data</string>
     <string name="registrovani_za_vakcinu">Random number</string>
     <string name="ljudi_za_vakcinu">Current number\nregistered for the vaccine :</string>
+    <string name="img_desc">Crossed coronavirus</string>
 </resources>

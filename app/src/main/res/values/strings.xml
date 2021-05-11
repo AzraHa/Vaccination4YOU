@@ -71,4 +71,5 @@
     <string name="savefile">Sacuvaj podatke</string>
     <string name="registrovani_za_vakcinu">Random broj</string>
     <string name="ljudi_za_vakcinu">Trenutni broj\nregistrovanih za vakcinu :</string>
+    <string name="img_desc">Prekrizen koronavirus</string>
 </resources>
