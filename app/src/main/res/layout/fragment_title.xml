@@ -44,5 +44,34 @@
             app:backgroundTint="@color/primaryDarkColor"
             app:rippleColor="@color/primaryLightColor" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="100dp"
+            android:paddingBottom="0dp">
+
+            <TextView
+                android:id="@+id/ljudi_vakcinaid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="15dp"
+                android:paddingTop="20dp"
+                android:paddingRight="15dp"
+                android:text="@string/ljudi_za_vakcinu" />
+
+            <TextView
+                android:id="@+id/reg_vakcinaid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="35dp"
+                android:paddingRight="15dp"
+                android:text="@string/registrovani_za_vakcinu"
+                android:textSize="16sp" />
+        </LinearLayout>
+
     </LinearLayout>
 </layout>

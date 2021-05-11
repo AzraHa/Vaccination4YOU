@@ -13,7 +13,7 @@
     <item
         android:id="@+id/savefile_id"
         android:enabled="true"
-        android:icon="@android:drawable/stat_sys_download_done"
+        android:icon="@drawable/savefile"
         android:title="@string/savefile"
         android:visible="true"
         app:showAsAction="ifRoom" />

@@ -69,4 +69,6 @@
     <string name="toastF_success">Vasi podaci su uspjesno sacuvani. Lokacija: %1$s</string>
     <string name="toastF_fail">Vasi podaci nisu uspjesno sacuvani.</string>
     <string name="savefile">Sacuvaj podatke</string>
+    <string name="registrovani_za_vakcinu">Random broj</string>
+    <string name="ljudi_za_vakcinu">Trenutni broj\nregistrovanih za vakcinu :</string>
 </resources>

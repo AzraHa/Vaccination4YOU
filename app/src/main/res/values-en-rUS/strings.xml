@@ -70,4 +70,6 @@
     <string name="toastF_success">Your data was successfully saved. Location: %1$s</string>
     <string name="toastF_fail">Your data was not saved.</string>
     <string name="savefile">Save data</string>
+    <string name="registrovani_za_vakcinu">Random number</string>
+    <string name="ljudi_za_vakcinu">Current number\nregistered for the vaccine :</string>
 </resources>
