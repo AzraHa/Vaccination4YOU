@@ -25,11 +25,7 @@
     <string name="Johnson"><![CDATA[Johnson & Johnson’s]]></string>
     <string name="Covid_q">"Are you currently diagnosed with COVID-19 ?"</string>
     <string name="da">Yes</string>
-    <string name="covid_ne">No</string>
     <string name="ne">No</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="datum_vakcinacije">Vaccination date</string>
-    <string name="vakcina">Vaccine</string>
     <string name="AstraZeneca">AstraZeneca</string>
     <string name="Sta_je_covid">What is Coronavirus?</string>
     <string name="Covid_19">Coronaviruses are a large family of viruses, which can be found in humans and animals. Under an electron microscope these viruses, in appearance resemble a crown, lat. "corona", hence the name coronaviruses. Some coronaviruses were found in the 1960s which were the cause of peoples illnesses, from the common cold to severe respiratory diseases. From 2003. new coronaviruses were being discovered, which originated in animals and transferred to humans and started to spread among people. So, after SARS being discovered in China, 2002. and MERS in the Middle East, 2012.(which is still active), a new coronavirus originated in China.</string>
@@ -49,7 +45,7 @@
     <string name="inkubacija_text">It is estimated that the incubation period lasts from 2 to 14 days, on average 5 to 6 days.</string>
     <string name="lijecenje">Is there a possibility of specific treatment for the disease caused by the new coronavirus?</string>
     <string name="lijecenje_text">There is no specific treatment for this disease. Treatment of an infected patient related to the coronavirus is treating clinical symptoms ie. high temperature and providing care. Currently there are vaccines for preventing the spread and infection caused by SARS-COVID-19.</string>
-    <string name="nista">None of the above</string>
+    <string name="nista">None of the above.</string>
     <string name="kategorije_end">Categories</string>
     <string name="boluje_covid">COVID-19 diagnose : </string>
     <string name="Kategorije_rizika">Problematic categories : </string>
@@ -59,8 +55,8 @@
     <string name="datum_r">Date of birth : </string>
     <string name="datum">Date : </string>
     <string name="share_data">My data for the vaccination :\nFull name: %1$s\nVaccine: %2$s\nDate of vaccination: %3$s\nWhere is yours?</string>
-    <string name="pozitivan">Positive</string>
-    <string name="negativan">Negative</string>
+    <string name="pozitivan">POSITIVE</string>
+    <string name="negativan">NEGATIVE</string>
     <string name="dijabeticar_P">Diabetic\n</string>
     <string name="trudnica_P">Pregnant\n</string>
     <string name="hemodijaliza_P">On hemodialysis\n</string>

@@ -47,7 +47,7 @@
             android:background="@color/secondaryLightColor"
             android:text="@string/start"
             android:textColor="@color/primaryTextColor"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             app:backgroundTint="@color/primaryDarkColor"
             app:rippleColor="@color/primaryLightColor" />
